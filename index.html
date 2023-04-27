@@ -1,0 +1,41 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> operator</title>
+ <link href="css/style.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ </head>
+<body>
+	 <div class="container">
+		<div class="row1">
+			<p>custom report<span class="fa fa-question-circle-o">  </span></p>
+		</div>
+	</div>
+	 <script>
+		let sp=document.querySelector("span");
+		let div=document.querySelector(".container")
+		 sp.addEventListener("mouseenter",function(e){ 
+			let div1=document.createElement("div")
+				div.appendChild(div1);
+				div1.classList.add("row2");
+			let head=document.createElement("h3");
+				div1.appendChild(head);
+				head.innerHTML="Click Custom Reports"
+			let para=document.createElement("p");
+				div1.appendChild(para);
+				para.innerHTML="Click the left-hand navigiation link to create a new custom Report or access custom Report you have created"
+			let para1=document.createElement("p");
+				div1.appendChild(para1);
+				para1.innerHTML="Select Custom Report to continue....."	
+				let sp=document.querySelector("span");
+				sp.addEventListener("mouseleave",function(e){ 
+			        div1.remove();
+		 
+		 
+
+		  }); 
+		  }); 
+		</script>
+		
+	 </body>
+</html>
